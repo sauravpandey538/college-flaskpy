@@ -1,0 +1,342 @@
+{% extends "base.html" %}
+
+{% block title %}Saurav Pandey - Full Stack Developer{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4">Hi, I'm Saurav Pandey</h1>
+                <p class="lead">Full Stack Developer | MERN Specialist | Problem Solver</p>
+                <p class="mb-4">Transforming ideas into elegant digital solutions with modern web technologies.</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Let's Connect</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="{{ url_for('static', filename='images/main.jpg') }}" 
+                     alt="Saurav Pandey" 
+                     class="img-fluid rounded profile-image"
+                     style="width: 400px; height: 400px; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="section-padding">
+    <div class="container">
+        <h2 class="text-center mb-5">About Me</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <p class="lead text-center">
+                    From teaching Japanese to crafting digital experiences, my journey represents my passion for continuous learning and growth. I specialize in building modern web applications using the MERN stack and Next.js, always focusing on creating solutions that make a real difference.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section-padding bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Technical Arsenal</h2>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Core Technologies</h3>
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <h6>MERN Stack</h6>
+                        <h6>80%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <h6>Next.js</h6>
+                        <h6>85%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <h6>TypeScript</h6>
+                        <h6>90%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <h3>Database & Tools</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">SQL & MySQL Database Management</li>
+                    <li class="list-group-item">JavaScript & TypeScript</li>
+                    <li class="list-group-item">MongoDB</li>
+                    <li class="list-group-item">RESTful API Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section-padding">
+    <div class="container">
+        <h2 class="text-center mb-5">Featured Projects</h2>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card project-card">
+                  <img src="{{ url_for('static', filename='images/cwp.png') }}" alt="College Works Pro" class="img-fluid rounded">
+                  <div class="card-body">
+                        <h5 class="card-title">College Works Pro</h5>
+                        <p class="card-text">A revolutionary platform enabling students to collaborate and trade assignments, fostering a community of peer learning and support.</p>
+                        <div class="tech-stack mb-3">
+                            <small class="text-muted">MERN Stack | Real-time Updates</small>
+                        </div>
+                        <a href="https://collegeworkspro.vercel.app/" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card project-card">
+                  <img src="{{ url_for('static', filename='images/sp.png') }}" alt="SajiloPDF" class="img-fluid rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">SajiloPDF</h5>
+                        <p class="card-text">An intuitive PDF manipulation tool that converts images to PDF, merges documents, and handles template replacements with ease.</p>
+                        <div class="tech-stack mb-3">
+                            <small class="text-muted">Next.js | Node.js | PDF Processing</small>
+                        </div>
+                        <a href="https://sajilopdf.vercel.app/" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card project-card">
+                  <img src="{{ url_for('static', filename='images/e.png') }}" alt="Ecommerce Website" class="img-fluid rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Website</h5>
+                            <p class="card-text">A full-featured e-commerce platform with real-time interactions, user authentication, and dynamic content sharing.</p>
+                        <div class="tech-stack mb-3">
+                            <small class="text-muted">MERN Stack | SQL | Redux</small>
+                        </div>
+                        <a href="https://sauravecommerce-sauravs-projects-6a71054e.vercel.app/" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section-padding bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Professional Journey</h2>
+        
+        <div class="timeline">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Full Stack Developer</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">2024 - Present</h6>
+                    <p class="card-text">
+                        <ul>
+                            <li>Developing modern web applications using MERN stack and Next.js</li>
+                            <li>Implementing responsive and user-friendly interfaces</li>
+                            <li>Building scalable backend solutions with Node.js and MongoDB</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Japanese Language Teacher</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">2022 - 2023</h6>
+                    <p class="card-text">
+                        <ul>
+                            <li>Developed and delivered comprehensive Japanese language curriculum</li>
+                            <li>Enhanced communication and presentation skills</li>
+                            <li>Cultivated strong interpersonal and cultural awareness abilities</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Section (Add this after the Experience section and before Contact section) -->
+<section id="resume" class="section-padding">
+    <div class="container">
+        <h2 class="text-center mb-5">Resume</h2>
+        
+
+
+        <!-- Visual Resume -->
+        <div class="row">
+            <!-- Education -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Education</h3>
+                        <div class="timeline">
+                            <div class="mb-4">
+                                <h5>Bachlor in Information Technology</h5>
+                                <p class="text-muted">Texas Int'l College</p>
+                                <p class="small">2024 - present</p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="mb-4">
+                                <h5>+2 Science</h5>
+                                <p class="text-muted">Times International College</p>
+                                <p class="small">2019 - 2022</p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="mb-4">
+                                <h5>High School</h5>
+                                <p class="text-muted">Pyuthan Valley Academy</p>
+                                <p class="small">2017 - 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills Summary -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Technical Expertise</h3>
+                        
+                        <div class="mb-4">
+                            <h5>Frontend Development</h5>
+                            <p>React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h5>Backend Development</h5>
+                            <p>Node.js, Express.js, MongoDB, SQL, MySQL</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h5>Tools & Technologies</h5>
+                            <p>Git, REST APIs, Redux, Material-UI, Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="col-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Professional Experience</h3>
+                        
+                        <!-- Current Role -->
+                        <div class="mb-4">
+                            <h5>Full Stack Developer</h5>
+                            <p class="text-muted">2024 - Present</p>
+                            <ul>
+                                <li>Developing and maintaining web applications using MERN stack</li>
+                                <li>Implementing responsive designs and ensuring cross-browser compatibility</li>
+                                <li>Building RESTful APIs and integrating with frontend applications</li>
+                                <li>Working with databases (MongoDB, MySQL) for data management</li>
+                            </ul>
+                        </div>
+
+                        <!-- Previous Role -->
+                        <div class="mb-4">
+                            <h5>Japanese Language Teacher</h5>
+                            <p class="text-muted">2022 - 2023</p>
+                            <ul>
+                                <li>Designed and delivered comprehensive Japanese language curriculum</li>
+                                <li>Developed strong communication and presentation skills</li>
+                                <li>Managed classroom activities and student progress tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Projects -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Key Projects</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <h5>College Works Pro</h5>
+                                <p class="text-muted">Student Assignment Platform</p>
+                                <p>MERN Stack, Real-time Updates</p>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <h5>SajiloPDF</h5>
+                                <p class="text-muted">PDF Management Tool</p>
+                                <p>Next.js, Node.js, PDF Processing</p>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <h5>Social Connect</h5>
+                                <p class="text-muted">Social Media Platform</p>
+                                <p>MERN Stack, Socket.io, Redux</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <h2 class="text-center mb-5">Let's Build Something Amazing Together</h2>
+                
+                <form action="{{ url_for('contact') }}" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+                
+                <div class="mt-5">
+                    <h3 class="text-center mb-4">Connect With Me</h3>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://www.linkedin.com/in/saurav-pandey-b3648530a/" class="btn btn-outline-dark"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/sauravpandey538" class="btn btn-outline-dark"><i class="bi bi-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
